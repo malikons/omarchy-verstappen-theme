@@ -1,0 +1,45 @@
+/* Verstappen Theme — Walker App Launcher */
+
+window {
+    background: rgba(10, 14, 26, 0.97);
+    border: 2px solid #e8002d;
+    border-radius: 10px;
+}
+
+#search {
+    background: transparent;
+    color: #e8eaf0;
+    caret-color: #ffd700;
+    font-family: "Geist Mono", monospace;
+    font-size: 18px;
+    padding: 16px 20px;
+    border-bottom: 1px solid #1e2d50;
+}
+
+#search::placeholder {
+    color: #3d4a6b;
+}
+
+.entry {
+    padding: 10px 16px;
+    border-radius: 4px;
+    color: #b0b8d0;
+    transition: all 0.1s ease;
+}
+
+.entry:selected,
+.entry:focus {
+    background: rgba(232, 0, 45, 0.15);
+    color: #e8eaf0;
+    border-left: 3px solid #e8002d;
+}
+
+.entry .name {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.entry .description {
+    font-size: 11px;
+    color: #6878a0;
+}

@@ -1,0 +1,12 @@
+{
+  "colors": {
+    "frame": [10, 14, 26],
+    "frame_inactive": [15, 22, 41],
+    "toolbar": [15, 22, 41],
+    "tab_text": [232, 234, 240],
+    "tab_background_text": [104, 120, 160],
+    "bookmark_text": [232, 234, 240],
+    "ntp_background": [10, 14, 26],
+    "ntp_text": [232, 234, 240]
+  }
+}

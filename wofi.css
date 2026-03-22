@@ -1,0 +1,38 @@
+/* Verstappen Theme — Wofi */
+
+window {
+    background-color: rgba(10, 14, 26, 0.97);
+    border: 2px solid #e8002d;
+    border-radius: 10px;
+}
+
+#input {
+    background-color: transparent;
+    color: #e8eaf0;
+    border: none;
+    border-bottom: 1px solid #1e2d50;
+    padding: 14px 18px;
+    font-family: "Geist Mono", monospace;
+    font-size: 16px;
+}
+
+#outer-box {
+    padding: 8px;
+}
+
+#entry {
+    padding: 8px 14px;
+    border-radius: 4px;
+    color: #b0b8d0;
+}
+
+#entry:selected {
+    background-color: rgba(232, 0, 45, 0.15);
+    color: #e8eaf0;
+    border-left: 3px solid #e8002d;
+}
+
+#text {
+    font-family: "Geist Mono", monospace;
+    font-size: 13px;
+}

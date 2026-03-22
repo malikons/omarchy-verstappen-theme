@@ -1,0 +1,22 @@
+/* Verstappen Theme — SwayOSD */
+
+window {
+    background: rgba(10, 14, 26, 0.92);
+    border: 1px solid #e8002d;
+    border-radius: 10px;
+}
+
+label {
+    color: #e8eaf0;
+    font-family: "Geist Mono", monospace;
+}
+
+progressbar trough {
+    background: #1e2d50;
+    border-radius: 4px;
+}
+
+progressbar progress {
+    background: linear-gradient(to right, #e8002d, #ffd700);
+    border-radius: 4px;
+}

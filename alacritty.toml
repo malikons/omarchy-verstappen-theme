@@ -1,0 +1,37 @@
+# Verstappen Theme — Alacritty Terminal
+
+[colors.primary]
+background = "#0a0e1a"
+foreground = "#e8eaf0"
+
+[colors.cursor]
+text   = "#0a0e1a"
+cursor = "#ffd700"
+
+[colors.vi_mode_cursor]
+text   = "#0a0e1a"
+cursor = "#ff6600"
+
+[colors.selection]
+text       = "#e8eaf0"
+background = "#1a2a50"
+
+[colors.normal]
+black   = "#0a0e1a"
+red     = "#e8002d"
+green   = "#00c853"
+yellow  = "#ffd700"
+blue    = "#1a6bcc"
+magenta = "#cc2255"
+cyan    = "#00aabb"
+white   = "#e8eaf0"
+
+[colors.bright]
+black   = "#3d4a6b"
+red     = "#ff3355"
+green   = "#33dd77"
+yellow  = "#ffee44"
+blue    = "#4499ee"
+magenta = "#ff4488"
+cyan    = "#33ccdd"
+white   = "#ffffff"

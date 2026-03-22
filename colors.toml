@@ -1,0 +1,42 @@
+# Verstappen Theme — Inspired by Max Verstappen & Red Bull Racing
+# Deep navy darkness, fiery red aggression, Dutch orange pride, championship gold
+
+[background]
+primary   = "#0a0e1a"   # Deep night — the cockpit at speed
+secondary = "#0f1629"   # Dark navy — helmet visor tint
+tertiary  = "#162040"   # Lifted navy — body panels
+
+[foreground]
+primary   = "#e8eaf0"   # Cool white — race suit
+secondary = "#b0b8d0"   # Muted blue-white — telemetry readout
+tertiary  = "#6878a0"   # Dim blue — ghost data
+
+[accent]
+primary   = "#e8002d"   # Red Bull red — aggressive, dominant
+secondary = "#ff6600"   # Dutch orange — Nederland pride
+tertiary  = "#ffd700"   # Championship gold — World Champion #1
+
+[ui]
+border         = "#1e2d50"   # Dark navy border
+selection      = "#1a2a50"   # Selection highlight
+highlight      = "#e8002d"   # Active element — red
+cursor         = "#ffd700"   # Cursor gold
+line_highlight = "#111828"   # Line highlight
+
+[terminal]
+black         = "#0a0e1a"
+red           = "#e8002d"
+green         = "#00c853"
+yellow        = "#ffd700"
+blue          = "#1a6bcc"
+magenta       = "#cc2255"
+cyan          = "#00aabb"
+white         = "#e8eaf0"
+bright_black  = "#3d4a6b"
+bright_red    = "#ff3355"
+bright_green  = "#33dd77"
+bright_yellow = "#ffee44"
+bright_blue   = "#4499ee"
+bright_magenta= "#ff4488"
+bright_cyan   = "#33ccdd"
+bright_white  = "#ffffff"

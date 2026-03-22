@@ -14,7 +14,7 @@ window {
 @define-color base #1a1f3c;
 @define-color text #e0e0e0;
 @define-color border #c0c0c0;
-@define-color selected #8B2635;
+@define-color selected #C4622D;
 @define-color selected-text #e0e0e0;
 
 /* Force solid background on wrapper */
@@ -49,11 +49,11 @@ child {
 }
 
 child:hover .item-box {
-  background: rgba(139, 38, 53, 0.5);
+  background: rgba(196, 98, 45, 0.5);
 }
 
 child:selected .item-box {
-  background: #8B2635;
+  background: #C4622D;
   border-left: 3px solid #c0c0c0;
 }
 

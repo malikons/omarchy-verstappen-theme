@@ -1,46 +1,63 @@
-/* Verstappen Theme — Walker App Launcher - Dutch Flag Colors */
+/* Verstappen Theme — Walker - Dutch Flag Colors */
 
-window {
-    background: rgba(33, 70, 139, 0.95);
-    border: 3px solid #ffffff;
-    border-radius: 10px;
+/* Import base colors from GTK */
+@define-color base rgba(33, 70, 139, 0.95);
+@define-color text #ffffff;
+@define-color border #ffffff;
+@define-color selected rgba(255, 102, 0, 0.95);
+@define-color selected-text #000000;
+
+.box-wrapper {
+  background: alpha(@base, 0.95);
+  border: 3px solid #ffffff;
+  border-radius: 10px;
 }
 
-#search {
-    background: transparent;
-    color: #ffffff;
-    caret-color: #ffd700;
-    font-family: "Geist Mono", monospace;
-    font-size: 18px;
-    padding: 16px 20px;
-    border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+.search-container {
+  background: transparent;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+  padding: 16px 20px;
 }
 
-#search::placeholder {
-    color: rgba(255, 255, 255, 0.6);
+.input {
+  color: #ffffff;
+  font-family: "Geist Mono", monospace;
+  font-size: 18px;
 }
 
-.entry {
-    padding: 10px 16px;
-    border-radius: 4px;
-    color: #e8eaf0;
-    transition: all 0.1s ease;
+.input placeholder {
+  color: rgba(255, 255, 255, 0.6);
 }
 
-.entry:selected,
-.entry:focus {
-    background: rgba(255, 102, 0, 0.85);
-    color: #000000;
-    border-left: 4px solid #ff6600;
-    font-weight: bold;
+child {
+  padding: 10px 16px;
+  border-radius: 4px;
+  color: #e8eaf0;
 }
 
-.entry .name {
-    font-size: 14px;
-    font-weight: 600;
+child:hover .item-box {
+  background: rgba(255, 102, 0, 0.5);
 }
 
-.entry .description {
-    font-size: 11px;
-    color: rgba(255, 255, 255, 0.8);
+child:selected .item-box {
+  background: rgba(255, 102, 0, 0.95);
+  border-left: 4px solid #ff6600;
+}
+
+child:selected .item-box * {
+  color: #000000;
+  font-weight: bold;
+}
+
+.item-text {
+  font-size: 14px;
+}
+
+.item-subtext {
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+child:selected .item-subtext {
+  color: rgba(0, 0, 0, 0.7);
 }

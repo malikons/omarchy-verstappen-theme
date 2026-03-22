@@ -1,15 +1,15 @@
 /* Verstappen Theme — Walker - Dutch Flag Colors */
 
-/* Official Dutch Flag Colors:
-   Red: #C8102E · White: #FFFFFF · Blue: #003DA5 */
+/* Easier on eyes dark blue: #000435
+   Dutch Red: #C8102E · White: #FFFFFF */
 
 /* Override window transparency - must use important to override default */
 window {
-  background: #003DA5 !important;
+  background: #000435 !important;
 }
 
 /* Import base colors from GTK */
-@define-color base #003DA5;
+@define-color base #000435;
 @define-color text #ffffff;
 @define-color border #ffffff;
 @define-color selected #C8102E;
@@ -17,15 +17,15 @@ window {
 
 /* Force solid background on wrapper */
 .box-wrapper {
-  background: #003DA5 !important;
-  background-color: #003DA5 !important;
+  background: #000435 !important;
+  background-color: #000435 !important;
   border: 3px solid #ffffff;
   border-radius: 10px;
   opacity: 1.0;
 }
 
 .search-container {
-  background: #003DA5;
+  background: #000435;
   border-bottom: 2px solid rgba(255, 255, 255, 0.3);
   padding: 16px 20px;
 }

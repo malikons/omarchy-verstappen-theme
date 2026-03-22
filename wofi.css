@@ -27,9 +27,10 @@ window {
 }
 
 #entry:selected {
-    background-color: rgba(232, 0, 45, 0.15);
-    color: #e8eaf0;
-    border-left: 3px solid #e8002d;
+    background-color: rgba(232, 0, 45, 0.35);
+    color: #ffffff;
+    border-left: 4px solid #e8002d;
+    font-weight: bold;
 }
 
 #text {

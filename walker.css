@@ -1,37 +1,37 @@
-/* Verstappen Theme — Walker App Launcher */
+/* Verstappen Theme — Walker App Launcher - Dutch Flag Colors */
 
 window {
-    background: rgba(10, 14, 26, 0.97);
-    border: 2px solid #e8002d;
+    background: rgba(33, 70, 139, 0.95);
+    border: 3px solid #ffffff;
     border-radius: 10px;
 }
 
 #search {
     background: transparent;
-    color: #e8eaf0;
+    color: #ffffff;
     caret-color: #ffd700;
     font-family: "Geist Mono", monospace;
     font-size: 18px;
     padding: 16px 20px;
-    border-bottom: 1px solid #1e2d50;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.3);
 }
 
 #search::placeholder {
-    color: #3d4a6b;
+    color: rgba(255, 255, 255, 0.6);
 }
 
 .entry {
     padding: 10px 16px;
     border-radius: 4px;
-    color: #b0b8d0;
+    color: #e8eaf0;
     transition: all 0.1s ease;
 }
 
 .entry:selected,
 .entry:focus {
-    background: rgba(232, 0, 45, 0.35);
-    color: #ffffff;
-    border-left: 4px solid #e8002d;
+    background: rgba(255, 102, 0, 0.85);
+    color: #000000;
+    border-left: 4px solid #ff6600;
     font-weight: bold;
 }
 
@@ -42,5 +42,5 @@ window {
 
 .entry .description {
     font-size: 11px;
-    color: #6878a0;
+    color: rgba(255, 255, 255, 0.8);
 }

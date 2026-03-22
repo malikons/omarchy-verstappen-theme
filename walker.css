@@ -1,62 +1,64 @@
-/* Verstappen Theme — Walker - Dutch Flag Colors */
+/* Verstappen Theme — Walker - Muted Dutch Flag Colors */
 
-/* Easier on eyes dark blue: #000435
-   Dutch Red: #C8102E · White: #FFFFFF */
+/* Muted colors - easier on eyes:
+   Dark navy: #1a1f3c
+   Muted red: #8B2635
+   Soft white: #e0e0e0 */
 
-/* Override window transparency - must use important to override default */
+/* Override window transparency */
 window {
-  background: #000435 !important;
+  background: #1a1f3c !important;
 }
 
 /* Import base colors from GTK */
-@define-color base #000435;
-@define-color text #ffffff;
-@define-color border #ffffff;
-@define-color selected #C8102E;
-@define-color selected-text #ffffff;
+@define-color base #1a1f3c;
+@define-color text #e0e0e0;
+@define-color border #c0c0c0;
+@define-color selected #8B2635;
+@define-color selected-text #e0e0e0;
 
 /* Force solid background on wrapper */
 .box-wrapper {
-  background: #000435 !important;
-  background-color: #000435 !important;
-  border: 3px solid #ffffff;
+  background: #1a1f3c !important;
+  background-color: #1a1f3c !important;
+  border: 2px solid #c0c0c0;
   border-radius: 10px;
   opacity: 1.0;
 }
 
 .search-container {
-  background: #000435;
-  border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+  background: #1a1f3c;
+  border-bottom: 1px solid rgba(192, 192, 192, 0.3);
   padding: 16px 20px;
 }
 
 .input {
-  color: #ffffff;
+  color: #e0e0e0;
   font-family: "Geist Mono", monospace;
   font-size: 18px;
 }
 
 .input placeholder {
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(192, 192, 192, 0.6);
 }
 
 child {
   padding: 10px 16px;
   border-radius: 4px;
-  color: #ffffff;
+  color: #e0e0e0;
 }
 
 child:hover .item-box {
-  background: rgba(200, 16, 46, 0.6);
+  background: rgba(139, 38, 53, 0.5);
 }
 
 child:selected .item-box {
-  background: #C8102E;
-  border-left: 4px solid #ffffff;
+  background: #8B2635;
+  border-left: 3px solid #c0c0c0;
 }
 
 child:selected .item-box * {
-  color: #ffffff;
+  color: #e0e0e0;
   font-weight: bold;
 }
 
@@ -66,9 +68,9 @@ child:selected .item-box * {
 
 .item-subtext {
   font-size: 11px;
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(192, 192, 192, 0.8);
 }
 
 child:selected .item-subtext {
-  color: rgba(255, 255, 255, 0.9);
+  color: rgba(224, 224, 224, 0.9);
 }

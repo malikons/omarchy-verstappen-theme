@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0e1a"/>
+      <stop offset="100%" style="stop-color:#162040"/>
+    </linearGradient>
+    <linearGradient id="bullGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e8002d;stop-opacity:0.8"/>
+      <stop offset="100%" style="stop-color:#ff6600;stop-opacity:0.6"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1920" height="1080" fill="url(#bg)"/>
+  
+  <!-- Abstract bull horns design -->
+  <path d="M 600 800 Q 800 400 960 600 Q 1120 400 1320 800" 
+        fill="none" stroke="url(#bullGrad)" stroke-width="8" opacity="0.3"/>
+  <path d="M 650 750 Q 820 450 960 620 Q 1100 450 1270 750" 
+        fill="none" stroke="#e8002d" stroke-width="5" opacity="0.2"/>
+  
+  <!-- Sun burst -->
+  <g opacity="0.1" stroke="#ffd700" stroke-width="2">
+    <line x1="960" y1="540" x2="200" y2="100"/>
+    <line x1="960" y1="540" x2="400" y2="50"/>
+    <line x1="960" y1="540" x2="600" y2="20"/>
+    <line x1="960" y1="540" x2="800" y2="5"/>
+    <line x1="960" y1="540" x2="960" y2="0"/>
+    <line x1="960" y1="540" x2="1120" y2="5"/>
+    <line x1="960" y1="540" x2="1320" y2="20"/>
+    <line x1="960" y1="540" x2="1520" y2="50"/>
+    <line x1="960" y1="540" x2="1720" y2="100"/>
+  </g>
+  
+  <!-- Center circle with number -->
+  <circle cx="960" cy="540" r="180" fill="#0a0e1a" opacity="0.8"/>
+  <circle cx="960" cy="540" r="170" fill="none" stroke="#e8002d" stroke-width="6" opacity="0.6"/>
+  <text x="960" y="600" font-family="Arial Black, sans-serif" font-weight="900"
+        font-size="180" text-anchor="middle" fill="#e8002d" opacity="0.9">1</text>
+  
+  <!-- Champion text -->
+  <text x="960" y="780" font-family="Arial, sans-serif" font-weight="bold"
+        font-size="40" text-anchor="middle" fill="#ffd700" opacity="0.5"
+        letter-spacing="10">WORLD CHAMPION</text>
+</svg>

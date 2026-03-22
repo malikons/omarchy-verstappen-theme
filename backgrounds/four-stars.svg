@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
+  <defs>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#ffd700;stop-opacity:0.3"/>
+      <stop offset="50%" style="stop-color:#e8002d;stop-opacity:0.1"/>
+      <stop offset="100%" style="stop-color:#0a0e1a;stop-opacity:0"/>
+    </radialGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1920" height="1080" fill="#0a0e1a"/>
+  
+  <!-- Trophy glow -->
+  <ellipse cx="960" cy="540" rx="400" ry="300" fill="url(#glow)"/>
+  
+  <!-- 4 Stars for 4 championships -->
+  <g opacity="0.7">
+    <!-- Star 1 -->
+    <polygon transform="translate(660,540) scale(3)"
+      points="0,-10 2,-3 9,-3 3,2 5,9 0,5 -5,9 -3,2 -9,-3 -2,-3"
+      fill="#ffd700"/>
+    <!-- Star 2 -->
+    <polygon transform="translate(860,540) scale(3)"
+      points="0,-10 2,-3 9,-3 3,2 5,9 0,5 -5,9 -3,2 -9,-3 -2,-3"
+      fill="#ffd700"/>
+    <!-- Star 3 -->
+    <polygon transform="translate(1060,540) scale(3)"
+      points="0,-10 2,-3 9,-3 3,2 5,9 0,5 -5,9 -3,2 -9,-3 -2,-3"
+      fill="#ffd700"/>
+    <!-- Star 4 -->
+    <polygon transform="translate(1260,540) scale(3)"
+      points="0,-10 2,-3 9,-3 3,2 5,9 0,5 -5,9 -3,2 -9,-3 -2,-3"
+      fill="#ffd700"/>
+  </g>
+  
+  <!-- Years below stars -->
+  <text x="660" y="600" font-family="monospace" font-size="24" 
+        text-anchor="middle" fill="#ffd700" opacity="0.6">2021</text>
+  <text x="860" y="600" font-family="monospace" font-size="24" 
+        text-anchor="middle" fill="#ffd700" opacity="0.6">2022</text>
+  <text x="1060" y="600" font-family="monospace" font-size="24" 
+        text-anchor="middle" fill="#ffd700" opacity="0.6">2023</text>
+  <text x="1260" y="600" font-family="monospace" font-size="24" 
+        text-anchor="middle" fill="#ffd700" opacity="0.6">2024</text>
+  
+  <!-- Champion text -->
+  <text x="960" y="800" font-family="Arial Black, sans-serif" font-weight="900"
+        font-size="60" text-anchor="middle" fill="#e8eaf0" opacity="0.15"
+        letter-spacing="15">4-TIME WORLD CHAMPION</text>
+  
+  <!-- Dutch flag at bottom -->
+  <rect x="460" y="950" width="333" height="20" fill="#e8002d" opacity="0.6"/>
+  <rect x="793" y="950" width="334" height="20" fill="#ffffff" opacity="0.4"/>
+  <rect x="1127" y="950" width="333" height="20" fill="#21468B" opacity="0.6"/>
+</svg>

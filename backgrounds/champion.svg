@@ -1,8 +1,113 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
-  <rect width="1920" height="1080" fill="#0a0e1a"/>
-  <text x="960" y="540" font-family="Arial Black, sans-serif" font-size="200" fill="#AE1C28" text-anchor="middle" dominant-baseline="middle">#1</text>
-  <text x="960" y="700" font-family="Arial, sans-serif" font-size="60" fill="#ffd700" text-anchor="middle" dominant-baseline="middle">WORLD CHAMPION</text>
-  <rect x="0" y="980" width="640" height="100" fill="#AE1C28"/>
-  <rect x="640" y="980" width="640" height="100" fill="#ffffff"/>
-  <rect x="1280" y="980" width="640" height="100" fill="#21468B"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2880 1920" width="2880" height="1920">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" style="stop-color:#0f1629"/>
+      <stop offset="100%" style="stop-color:#0a0e1a"/>
+    </radialGradient>
+    <radialGradient id="burst" cx="50%" cy="45%" r="50%">
+      <stop offset="0%" style="stop-color:#ffd700;stop-opacity:0.18"/>
+      <stop offset="30%" style="stop-color:#e8002d;stop-opacity:0.08"/>
+      <stop offset="100%" style="stop-color:#0a0e1a;stop-opacity:0"/>
+    </radialGradient>
+    <radialGradient id="outerGlow" cx="50%" cy="45%" r="60%">
+      <stop offset="0%" style="stop-color:#ff6600;stop-opacity:0.05"/>
+      <stop offset="100%" style="stop-color:#0a0e1a;stop-opacity:0"/>
+    </radialGradient>
+    <filter id="glow-gold">
+      <feGaussianBlur stdDeviation="12" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glow-red">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="2880" height="1920" fill="url(#bg)"/>
+  <rect width="2880" height="1920" fill="url(#burst)"/>
+  <rect width="2880" height="1920" fill="url(#outerGlow)"/>
+
+  <!-- Trophy rays from center-top -->
+  <g opacity="0.06" stroke="#ffd700" stroke-width="1">
+    <line x1="1440" y1="540" x2="80"   y2="0"/>
+    <line x1="1440" y1="540" x2="300"  y2="0"/>
+    <line x1="1440" y1="540" x2="540"  y2="0"/>
+    <line x1="1440" y1="540" x2="780"  y2="0"/>
+    <line x1="1440" y1="540" x2="1020" y2="0"/>
+    <line x1="1440" y1="540" x2="1260" y2="0"/>
+    <line x1="1440" y1="540" x2="1440" y2="0"/>
+    <line x1="1440" y1="540" x2="1620" y2="0"/>
+    <line x1="1440" y1="540" x2="1860" y2="0"/>
+    <line x1="1440" y1="540" x2="2100" y2="0"/>
+    <line x1="1440" y1="540" x2="2340" y2="0"/>
+    <line x1="1440" y1="540" x2="2580" y2="0"/>
+    <line x1="1440" y1="540" x2="2800" y2="0"/>
+    <line x1="1440" y1="540" x2="0"    y2="180"/>
+    <line x1="1440" y1="540" x2="2880" y2="180"/>
+    <line x1="1440" y1="540" x2="0"    y2="440"/>
+    <line x1="1440" y1="540" x2="2880" y2="440"/>
+    <line x1="1440" y1="540" x2="0"    y2="800"/>
+    <line x1="1440" y1="540" x2="2880" y2="800"/>
+  </g>
+
+  <!-- Championship bands at bottom -->
+  <rect x="0" y="1814" width="2880" height="6"  fill="#e8002d" opacity="0.5"/>
+  <rect x="0" y="1824" width="2880" height="3"  fill="#ffd700" opacity="0.4"/>
+  <rect x="0" y="1830" width="2880" height="2"  fill="#ff6600" opacity="0.3"/>
+
+  <!-- Large "1" -->
+  <text x="1440" y="1230" font-family="'Arial Black', Arial, sans-serif" font-weight="900"
+        font-size="980" text-anchor="middle" fill="#ffd700" opacity="0.07"
+        filter="url(#glow-gold)">1</text>
+
+  <!-- Four championship stars -->
+  <g filter="url(#glow-gold)" opacity="0.85">
+    <polygon transform="translate(1210,450)"
+      points="0,-50 12,-17 46,-17 19,7 29,40 0,21 -29,40 -19,7 -46,-17 -12,-17"
+      fill="#ffd700"/>
+    <polygon transform="translate(1360,450)"
+      points="0,-50 12,-17 46,-17 19,7 29,40 0,21 -29,40 -19,7 -46,-17 -12,-17"
+      fill="#ffd700"/>
+    <polygon transform="translate(1510,450)"
+      points="0,-50 12,-17 46,-17 19,7 29,40 0,21 -29,40 -19,7 -46,-17 -12,-17"
+      fill="#ffd700"/>
+    <polygon transform="translate(1660,450)"
+      points="0,-50 12,-17 46,-17 19,7 29,40 0,21 -29,40 -19,7 -46,-17 -12,-17"
+      fill="#ffd700"/>
+  </g>
+
+  <!-- Championship years -->
+  <text x="1210" y="545" font-family="monospace" font-size="26" text-anchor="middle"
+        fill="#ffd700" opacity="0.5">2021</text>
+  <text x="1360" y="545" font-family="monospace" font-size="26" text-anchor="middle"
+        fill="#ffd700" opacity="0.5">2022</text>
+  <text x="1510" y="545" font-family="monospace" font-size="26" text-anchor="middle"
+        fill="#ffd700" opacity="0.5">2023</text>
+  <text x="1660" y="545" font-family="monospace" font-size="26" text-anchor="middle"
+        fill="#ffd700" opacity="0.5">2024</text>
+
+  <!-- MAX VERSTAPPEN wordmark -->
+  <text x="1440" y="1500" font-family="'Arial Black', Arial, sans-serif" font-weight="900"
+        font-size="160" text-anchor="middle" fill="#e8eaf0" opacity="0.08"
+        letter-spacing="36">MAX VERSTAPPEN</text>
+
+  <!-- Red underline -->
+  <rect x="490" y="1518" width="1900" height="4" fill="#e8002d" opacity="0.15"
+        filter="url(#glow-red)"/>
+
+  <!-- Four time world champion -->
+  <text x="1440" y="1596" font-family="'Arial Black', Arial, sans-serif" font-weight="700"
+        font-size="70" text-anchor="middle" fill="#ff6600" opacity="0.07"
+        letter-spacing="26">FOUR TIME WORLD CHAMPION</text>
+
+  <!-- Dutch flag stripe — right edge -->
+  <rect x="2760" y="0"    width="28" height="640" fill="#e8002d" opacity="0.3"/>
+  <rect x="2760" y="640"  width="28" height="640" fill="#e8eaf0" opacity="0.15"/>
+  <rect x="2760" y="1280" width="28" height="640" fill="#1a6bcc" opacity="0.3"/>
+
+  <!-- Helmet visor arc -->
+  <ellipse cx="1440" cy="180" rx="520" ry="155" fill="none"
+           stroke="#4499ee" stroke-width="2" opacity="0.08"/>
+  <ellipse cx="1440" cy="180" rx="340" ry="96" fill="none"
+           stroke="#e8eaf0" stroke-width="1" opacity="0.06"/>
 </svg>

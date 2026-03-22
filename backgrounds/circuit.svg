@@ -1,12 +1,166 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
-  <rect width="1920" height="1080" fill="#0a0e1a"/>
-  <path d="M0 800 Q480 600 960 750 T1920 700 L1920 1080 L0 1080 Z" fill="#162040" opacity="0.5"/>
-  <path d="M0 850 Q480 650 960 800 T1920 750 L1920 1080 L0 1080 Z" fill="#1e2d50" opacity="0.7"/>
-  <text x="100" y="150" font-family="monospace" font-size="40" fill="#e8002d">MAX VERSTAPPEN</text>
-  <text x="100" y="200" font-family="monospace" font-size="24" fill="#6878a0">ORACLE RED BULL RACING</text>
-  <circle cx="1700" cy="200" r="80" fill="none" stroke="#ffd700" stroke-width="8"/>
-  <text x="1700" y="220" font-family="Arial Black, sans-serif" font-size="100" fill="#ffd700" text-anchor="middle">1</text>
-  <rect x="0" y="0" width="20" height="1080" fill="#AE1C28"/>
-  <rect x="20" y="0" width="20" height="1080" fill="#ffffff"/>
-  <rect x="40" y="0" width="20" height="1080" fill="#21468B"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2880 1920" width="2880" height="1920">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0e1a"/>
+      <stop offset="100%" style="stop-color:#0f1629"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glow-strong">
+      <feGaussianBlur stdDeviation="10" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="2880" height="1920" fill="url(#bg)"/>
+
+  <!-- Track outline — all coords within 2880x1920 with ~120px margin -->
+  <path d="M 280,1380
+           Q 200,1380 200,1300
+           L 200,820
+           Q 200,650 360,600
+           L 660,538
+           Q 820,520 900,630
+           L 970,752
+           Q 1030,860 1150,860
+           L 1400,860
+           Q 1540,860 1610,730
+           L 1690,550
+           Q 1810,340 2020,325
+           L 2340,315
+           Q 2580,315 2660,460
+           L 2710,620
+           Q 2740,730 2740,830
+           Q 2740,1020 2630,1100
+           L 2390,1220
+           Q 2220,1280 2070,1248
+           L 1690,1178
+           Q 1530,1154 1450,1215
+           L 1280,1308
+           Q 1130,1384 980,1370
+           L 560,1320
+           Q 420,1304 280,1380 Z"
+        fill="none" stroke="#1e2d50" stroke-width="70" stroke-linejoin="round"/>
+
+  <!-- Track surface -->
+  <path d="M 280,1380
+           Q 200,1380 200,1300
+           L 200,820
+           Q 200,650 360,600
+           L 660,538
+           Q 820,520 900,630
+           L 970,752
+           Q 1030,860 1150,860
+           L 1400,860
+           Q 1540,860 1610,730
+           L 1690,550
+           Q 1810,340 2020,325
+           L 2340,315
+           Q 2580,315 2660,460
+           L 2710,620
+           Q 2740,730 2740,830
+           Q 2740,1020 2630,1100
+           L 2390,1220
+           Q 2220,1280 2070,1248
+           L 1690,1178
+           Q 1530,1154 1450,1215
+           L 1280,1308
+           Q 1130,1384 980,1370
+           L 560,1320
+           Q 420,1304 280,1380 Z"
+        fill="none" stroke="#162040" stroke-width="52" stroke-linejoin="round"/>
+
+  <!-- Dashed centre line -->
+  <path d="M 280,1380
+           Q 200,1380 200,1300
+           L 200,820
+           Q 200,650 360,600
+           L 660,538
+           Q 820,520 900,630
+           L 970,752
+           Q 1030,860 1150,860
+           L 1400,860
+           Q 1540,860 1610,730
+           L 1690,550
+           Q 1810,340 2020,325
+           L 2340,315
+           Q 2580,315 2660,460
+           L 2710,620
+           Q 2740,730 2740,830
+           Q 2740,1020 2630,1100
+           L 2390,1220
+           Q 2220,1280 2070,1248
+           L 1690,1178
+           Q 1530,1154 1450,1215
+           L 1280,1308
+           Q 1130,1384 980,1370
+           L 560,1320
+           Q 420,1304 280,1380 Z"
+        fill="none" stroke="#e8eaf0" stroke-width="2" stroke-dasharray="34,26"
+        opacity="0.15" stroke-linejoin="round"/>
+
+  <!-- Racing line (red) -->
+  <path d="M 248,980
+           Q 210,800 338,660
+           L 622,582
+           Q 800,554 872,658
+           L 944,766
+           Q 1014,884 1150,888
+           L 1400,888
+           Q 1524,888 1586,766
+           L 1662,592
+           Q 1778,366 2000,350
+           L 2340,340
+           Q 2562,340 2636,476
+           L 2684,634
+           Q 2714,742 2714,830
+           Q 2714,1002 2610,1076
+           L 2372,1192
+           Q 2202,1246 2054,1216
+           L 1678,1148
+           Q 1508,1120 1422,1188
+           L 1252,1290
+           Q 1106,1360 968,1346
+           L 568,1298"
+        fill="none" stroke="#e8002d" stroke-width="3" opacity="0.7"
+        filter="url(#glow)" stroke-linejoin="round"/>
+
+  <!-- Sector markers -->
+  <line x1="510" y1="540" x2="510" y2="596" stroke="#e8002d" stroke-width="4" filter="url(#glow)"/>
+  <text x="522" y="532" font-family="monospace" font-size="22" fill="#e8002d" opacity="0.8">S1</text>
+
+  <line x1="2000" y1="325" x2="2000" y2="381" stroke="#ff6600" stroke-width="4" filter="url(#glow)"/>
+  <text x="2012" y="316" font-family="monospace" font-size="22" fill="#ff6600" opacity="0.8">S2</text>
+
+  <line x1="2070" y1="1230" x2="2070" y2="1286" stroke="#ffd700" stroke-width="4" filter="url(#glow)"/>
+  <text x="2082" y="1222" font-family="monospace" font-size="22" fill="#ffd700" opacity="0.8">S3</text>
+
+  <!-- Start/Finish line -->
+  <line x1="222" y1="980" x2="272" y2="980" stroke="#e8eaf0" stroke-width="6" opacity="0.9"/>
+  <text x="120" y="976" font-family="monospace" font-size="18" fill="#e8eaf0" opacity="0.6">S/F</text>
+
+  <!-- Corner labels -->
+  <text x="182" y="780" font-family="monospace" font-size="16" fill="#b0b8d0" opacity="0.5">T1</text>
+  <text x="880" y="848" font-family="monospace" font-size="16" fill="#b0b8d0" opacity="0.5">T3</text>
+  <text x="1574" y="700" font-family="monospace" font-size="16" fill="#b0b8d0" opacity="0.5">T8</text>
+  <text x="2700" y="826" font-family="monospace" font-size="16" fill="#b0b8d0" opacity="0.5">T12</text>
+
+  <!-- Pole position dot -->
+  <circle cx="248" cy="980" r="7" fill="#ffd700" filter="url(#glow-strong)" opacity="0.9"/>
+  <circle cx="248" cy="980" r="3" fill="#ffffff"/>
+
+  <!-- ZANDVOORT watermark -->
+  <text x="1440" y="1700" font-family="'Arial Black', Arial, sans-serif" font-weight="900"
+        font-size="155" text-anchor="middle" fill="#e8002d" opacity="0.04"
+        letter-spacing="24">ZANDVOORT</text>
+
+  <!-- 1 watermark -->
+  <text x="1440" y="1060" font-family="'Arial Black', Arial, sans-serif" font-weight="900"
+        font-size="500" text-anchor="middle" fill="#ffd700" opacity="0.03">1</text>
+
+  <!-- Telemetry bar -->
+  <text x="80" y="1870" font-family="monospace" font-size="20" fill="#4499ee" opacity="0.25"
+        letter-spacing="3">LAP  ·  1:09.347  ·  DRS OPEN  ·  ERS 100%  ·  FUEL 42KG  ·  TYRE: SOFT  ·  DEG 18%</text>
 </svg>

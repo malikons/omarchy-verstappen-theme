@@ -46,7 +46,15 @@ Then select **verstappen** via `Super + Ctrl + Shift + Space`.
 
 ## Wallpapers
 
-Add F1/Red Bull Racing wallpapers to the `backgrounds/` folder.
+Three SVG wallpapers are included in `backgrounds/`:
+
+| File | Description |
+|------|-------------|
+| `speed.svg` | Speed streaks and vanishing point — dark navy with red/orange/gold light trails |
+| `circuit.svg` | Zandvoort circuit map with sector markers, racing line, and telemetry readout |
+| `champion.svg` | Four-championship tribute — gold stars, championship years, Dutch flag stripe |
+
+Add additional wallpapers to the `backgrounds/` folder.
 Cycle through them with `Super + Ctrl + Space`.
 
 ---

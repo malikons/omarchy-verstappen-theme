@@ -1,96 +1,273 @@
-/* Verstappen Theme — Waybar */
+/* Verstappen Theme — Dutch Flag Color Zones */
+/* Red (Left) | White (Center) | Blue (Right) */
 
-* {
-    font-family: "Geist Mono", "JetBrains Mono", monospace;
-    font-size: 13px;
-    border: none;
-    border-radius: 0;
-    min-height: 0;
+/* --- Base Colors --- */
+@define-color foreground #e8eaf0;
+@define-color background #0a0e1a;
+@define-color dutch-red #AE1C28;
+@define-color dutch-white #ffffff;
+@define-color dutch-blue #21468B;
+@define-color dutch-orange #ff6600;
+@define-color championship-gold #ffd700;
+
+/* --- Left Group (RED) - Clock, Weather, System Info --- */
+#left1 {
+  border-radius: 4px 0 0 4px;
+  opacity: 1;
+  border: 2px solid @dutch-red;
+  border-right: none;
+  color: @dutch-white;
+  background-color: alpha(@dutch-red, 0.95);
+  margin-right: 0px;
+  padding-left: 6px;
+  padding-right: 6px;
 }
 
-window#waybar {
-    background: rgba(10, 14, 26, 0.95);
-    border-bottom: 2px solid #e8002d;
-    color: #e8eaf0;
+/* Left group modules styling */
+#left1 #clock,
+#left1 #custom-weather,
+#left1 #custom-omarchy,
+#left1 #custom-update,
+#left1 #custom-updatespacman,
+#left1 #idle_inhibitor,
+#left1 #custom-idle-indicator,
+#left1 #custom-notification-silencing-indicator,
+#left1 #custom-voxtype,
+#left1 #mpris,
+#left1 #tray,
+#left1 #custom-screenrecording-indicator {
+  color: @dutch-white;
+  margin: 0px 2px;
+  padding-left: 3px;
+  padding-right: 3px;
 }
 
-/* Workspace buttons */
+/* Clock in left group - Gold accent for importance */
+#left1 #clock {
+  color: @championship-gold;
+  font-weight: bold;
+}
+
+/* MPRIS in left group - animated gold */
+#left1 #mpris {
+  color: @championship-gold;
+  animation: repeat;
+  animation-name: blink-gold;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes blink-gold {
+  to { color: alpha(@championship-gold, 0.6); }
+}
+
+/* --- Center (WHITE) - Workspaces --- */
+#workspaces {
+  border: 2px solid alpha(@dutch-blue, 0.8);
+  border-radius: 0;
+  background-color: @dutch-white;
+  opacity: 1;
+  margin: 0px;
+  padding: 1px;
+  min-height: 0px;
+}
+
 #workspaces button {
-    padding: 0 8px;
-    background: transparent;
-    color: #6878a0;
-    border-bottom: 2px solid transparent;
-    transition: all 0.2s ease;
+  padding: 0px 15px;
+  margin: 1px 1px;
+  border-radius: 2px;
+  background-color: alpha(@dutch-blue, 0.3);
+  color: @dutch-blue;
+  transition: all 0.15s ease-in-out;
+  opacity: 0.95;
 }
 
+/* Active workspace - Dutch Red */
 #workspaces button.active {
-    color: #e8eaf0;
-    border-bottom: 2px solid #e8002d;
-    background: rgba(232, 0, 45, 0.1);
+  background-color: @dutch-red;
+  color: @dutch-white;
+  padding: 0 15px;
+  margin: 1px 1px;
+  border-radius: 2px;
+  opacity: 1.0;
+  transition: all 0.15s ease-in-out;
 }
 
-#workspaces button:hover {
-    color: #ff6600;
-    background: rgba(255, 102, 0, 0.1);
+/* Empty workspace - Lighter blue */
+#workspaces button.empty {
+  background-color: alpha(@dutch-blue, 0.15);
+  color: @dutch-blue;
+  opacity: 0.5;
 }
 
-/* Modules */
-#clock {
-    color: #ffd700;
-    font-weight: bold;
-    padding: 0 12px;
+#workspaces button.empty.active {
+  background-color: @dutch-red;
+  color: @dutch-white;
+  opacity: 1;
 }
 
-#battery {
-    color: #e8eaf0;
-    padding: 0 10px;
+/* Hover - Dutch Orange */
+#workspaces button:hover,
+#workspaces button:hover.empty {
+  background-color: @dutch-orange;
+  color: @dutch-white;
+  opacity: 1;
 }
 
-#battery.charging {
-    color: #00c853;
+/* --- Right Group (BLUE) - System Resources --- */
+#right1 {
+  border-radius: 0 4px 4px 0;
+  opacity: 1;
+  border: 2px solid @dutch-blue;
+  border-left: none;
+  color: @dutch-white;
+  background-color: alpha(@dutch-blue, 0.95);
+  margin-left: 0px;
+  padding-left: 6px;
+  padding-right: 6px;
 }
 
-#battery.warning:not(.charging) {
-    color: #ff6600;
+/* Right group modules styling */
+#right1 #cpu,
+#right1 #memory,
+#right1 #battery,
+#right1 #network,
+#right1 #bluetooth,
+#right1 #backlight,
+#right1 #pulseaudio,
+#right1 #pulseaudio.output,
+#right1 #pulseaudio.input,
+#right1 #power-profiles-daemon {
+  color: @dutch-white;
+  margin: 0px 2px;
+  padding-left: 3px;
+  padding-right: 3px;
 }
 
-#battery.critical:not(.charging) {
-    color: #e8002d;
-    animation: blink 0.5s steps(12) infinite;
+/* High CPU usage - Red warning */
+#right1 #cpu.high,
+#right1 #cpu.critical {
+  color: #ff4444;
+  animation: blink-red 0.5s steps(2) infinite alternate;
 }
 
-#network {
-    color: #b0b8d0;
-    padding: 0 10px;
+/* High memory usage - Orange warning */
+#right1 #memory.high,
+#right1 #memory.critical {
+  color: @dutch-orange;
+  animation: blink-orange 0.5s steps(2) infinite alternate;
 }
 
-#network.connected {
-    color: #00aabb;
+@keyframes blink-red {
+  to { color: @dutch-white; }
 }
 
-#pulseaudio {
-    color: #b0b8d0;
-    padding: 0 10px;
+@keyframes blink-orange {
+  to { color: @dutch-white; }
 }
 
-#pulseaudio.muted {
-    color: #3d4a6b;
+/* Battery states */
+#right1 #battery.charging {
+  color: #00ff88;
 }
 
-#cpu {
-    color: #ff6600;
-    padding: 0 10px;
+#right1 #battery.warning:not(.charging) {
+  color: @dutch-orange;
 }
 
-#memory {
-    color: #cc2255;
-    padding: 0 10px;
+#right1 #battery.critical:not(.charging) {
+  color: #ff4444;
+  animation: blink-critical 0.3s steps(2) infinite alternate;
 }
 
-#tray {
-    padding: 0 8px;
+@keyframes blink-critical {
+  to { 
+    color: @dutch-white;
+    background-color: #ff4444;
+  }
 }
 
-@keyframes blink {
-    to { color: transparent; }
+/* Network connected - Gold accent */
+#right1 #network {
+  color: @championship-gold;
+}
+
+#right1 #network.disconnected {
+  color: #ff4444;
+}
+
+/* Bluetooth */
+#right1 #bluetooth {
+  color: #4488ff;
+}
+
+#right1 #bluetooth.off {
+  color: alpha(@dutch-white, 0.4);
+}
+
+/* Power profile */
+#right1 #power-profiles-daemon.performance {
+  color: #ff4444;
+}
+
+#right1 #power-profiles-daemon.balanced {
+  color: @championship-gold;
+}
+
+#right1 #power-profiles-daemon.power-saver {
+  color: #00ff88;
+}
+
+/* --- Tooltip Styling --- */
+tooltip {
+  padding: 4px;
+  background: @background;
+  border: 2px solid @dutch-red;
+  border-bottom-color: @dutch-blue;
+  border-radius: 6px;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+  font-size: 11px;
+}
+
+tooltip label {
+  color: @foreground;
+  font-weight: normal;
+}
+
+/* --- Custom Module Specific --- */
+#custom-update {
+  color: @championship-gold;
+}
+
+#custom-voxtype.recording {
+  color: #ff4444;
+  animation: blink-rec 1s steps(2) infinite;
+}
+
+@keyframes blink-rec {
+  to { color: @dutch-white; }
+}
+
+#custom-screenrecording-indicator.active {
+  color: #ff4444;
+  animation: blink-rec 0.5s steps(2) infinite;
+}
+
+/* Idle indicator active state */
+#custom-idle-indicator.active,
+#custom-notification-silencing-indicator.active {
+  color: @dutch-orange;
+}
+
+/* Tray icons */
+#tray > .passive {
+  -gtk-icon-effect: dim;
+}
+
+#tray > .needs-attention {
+  -gtk-icon-effect: highlight;
+  background-color: @dutch-orange;
+  border-radius: 2px;
 }

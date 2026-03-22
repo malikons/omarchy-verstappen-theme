@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <rect width="1920" height="1080" fill="#0a0e1a"/>
+  <text x="960" y="540" font-family="Arial Black, sans-serif" font-size="200" fill="#AE1C28" text-anchor="middle" dominant-baseline="middle">#1</text>
+  <text x="960" y="700" font-family="Arial, sans-serif" font-size="60" fill="#ffd700" text-anchor="middle" dominant-baseline="middle">WORLD CHAMPION</text>
+  <rect x="0" y="980" width="640" height="100" fill="#AE1C28"/>
+  <rect x="640" y="980" width="640" height="100" fill="#ffffff"/>
+  <rect x="1280" y="980" width="640" height="100" fill="#21468B"/>
+</svg>

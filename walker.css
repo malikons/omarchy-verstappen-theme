@@ -2,11 +2,11 @@
 
 /* Override window transparency - must use important to override default */
 window {
-  background: #21468B !important;
+  background: #0a1628 !important;
 }
 
 /* Import base colors from GTK */
-@define-color base #21468B;
+@define-color base #0a1628;
 @define-color text #ffffff;
 @define-color border #ffffff;
 @define-color selected rgba(255, 102, 0, 1.0);
@@ -14,15 +14,15 @@ window {
 
 /* Force solid background on wrapper */
 .box-wrapper {
-  background: #21468B !important;
-  background-color: #21468B !important;
+  background: #0a1628 !important;
+  background-color: #0a1628 !important;
   border: 3px solid #ffffff;
   border-radius: 10px;
   opacity: 1.0;
 }
 
 .search-container {
-  background: #21468B;
+  background: #0a1628;
   border-bottom: 2px solid rgba(255, 255, 255, 0.3);
   padding: 16px 20px;
 }

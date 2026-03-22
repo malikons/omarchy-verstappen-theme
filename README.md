@@ -19,7 +19,7 @@ Deep navy darkness like a night race. Fiery red like the livery. Dutch orange li
 ## Installation
 
 ```bash
-omarchy-theme-install https://github.com/YOUR_USERNAME/omarchy-verstappen-theme
+omarchy-theme-install https://github.com/malikons/omarchy-verstappen-theme
 ```
 
 Or manually:
